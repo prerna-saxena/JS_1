@@ -1,0 +1,71 @@
+// CODE OF SUM OF THE NUMBERS 
+
+function sum(a,b,c,d,e){
+return a*b*c*d*e;
+}
+
+alert(sum(10,20,30,40,50));
+
+//12000000
+
+=== Code Execution Successful ===
+
+
+**********************************************************************
+**********************************************************************
+
+// CODE OF SUM OF THE NUMBERS IN CASE OF MANY ARGUMENT BUT DOESNT PASS VALUE 
+
+
+function sum(a, b, c, d) {
+    return a + b + c + d;
+}
+
+console.log(sum(1, 2, 3)); 
+
+// Output: NaN
+
+
+
+*****************************************************************************
+*****************************************************************************
+
+REASON BEHIND THAT :-
+
+the function expects four arguments (a, b, c, and d).  
+I am  only providing three (1, 2, and 3).  So, a becomes 1, b becomes 2, c becomes 3, but d is implicitly undefined.  
+When you try to add 1 + 2 + 3 + undefined, JavaScript performs type coercion. It attempts to convert undefined to a number.  
+undefined cannot be meaningfully converted to a number, and this operation results in NaN.
+
+
+
+
+Key takeaway:  When a function expects a certain number of arguments, and you provide fewer, 
+the missing arguments are assigned the value undefined.  Mathematical operations involving undefined often result in NaN. 
+Always ensure you're providing the expected number of arguments to your functions,
+or handle the possibility of missing arguments within your function's logic (e.g., using default parameter values or checking for undefined).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
